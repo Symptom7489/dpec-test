@@ -4,6 +4,7 @@ backend:
 
 media_folder: images/members
 public_folder: /images/members
+branch: main
 
 collections:
   - name: "members"
