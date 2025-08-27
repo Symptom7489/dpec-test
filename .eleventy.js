@@ -1,19 +1,23 @@
-module.exports = function(eleventyConfig) {
-  // Only copy the admin folder to root of _site
-  eleventyConfig.addPassthroughCopy({ "static/admin": "admin" });
+module.exports = function (eleventyConfig) {
+  // ✅ Copy the admin folder to _site/admin
+  eleventyConfig.addPassthroughCopy({ "admin": "admin" });
 
-  // Optional: copy uploads too
-  eleventyConfig.addPassthroughCopy({ "static/uploads": "uploads" });
+  // ✅ Copy images folder (now the source of all media)
+  eleventyConfig.addPassthroughCopy("images");
 
-  // Collection for members
-  eleventyConfig.addCollection("member", function(collectionApi) {
+  // ✅ Optional: if you have CSS, JS, or other assets in root folders
+  // eleventyConfig.addPassthroughCopy("css");
+  // eleventyConfig.addPassthroughCopy("js");
+
+  // ✅ Collection for members
+  eleventyConfig.addCollection("member", function (collectionApi) {
     return collectionApi.getFilteredByGlob("members/*.md");
   });
 
   return {
     dir: {
-      input: ".",
-      output: "_site"
+      input: ".",     // Project root
+      output: "_site" // Output folder
     }
   };
 };

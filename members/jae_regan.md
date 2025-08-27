@@ -2,7 +2,7 @@
 name: Jae Regan
 pronouns: they/them
 role: Lafayette DPEC Chairperson, At-Large Representative
-photo: /static/uploads/jae_ragen.png
+photo: /images/members/jae_ragen.png
 layout: layouts/members.njk
 ---
 

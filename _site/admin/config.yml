@@ -1,9 +1,9 @@
 backend:
-  name: git-gateway
-  branch: main   # your default branch
+  name: github
+  repo: Symptom7489/dpec-test
 
-media_folder: "static/uploads"   # where uploaded images will go
-public_folder: "/uploads"        # URL path to images
+media_folder: images/members
+public_folder: /images/members
 
 collections:
   - name: "members"
