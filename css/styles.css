@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 .flex-body {
   display: flex;
   flex-direction: column;
