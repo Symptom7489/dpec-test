@@ -1,10 +1,10 @@
 backend:
-  name: github
+  name: git-gateway
   repo: Symptom7489/dpec-test
+  branch: main
 
 media_folder: images/members
 public_folder: /images/members
-branch: main
 
 collections:
   - name: "members"

@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("images");
 
   // ✅ Optional: if you have CSS, JS, or other assets in root folders
-  // eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("css"); // This line is now active
   // eleventyConfig.addPassthroughCopy("js");
 
   // ✅ Collection for members
@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
 
   return {
     dir: {
-      input: ".",     // Project root
+      input: ".",      // Project root
       output: "_site" // Output folder
     }
   };
