@@ -3,28 +3,30 @@ layout: layouts/base.njk
 title: Our Members
 ---
 
-<div class="columns is-multiline mt-4">
-{% for member in collections.member %}
-  <div class="column is-6-tablet is-4-desktop">
-    <a href="{{ member.url }}">
-      <div class="card">
-        {% if member.data.photo %}
-        <div class="card-image">
-          <figure class="image" style="max-width:150px; margin:0.25rem auto;">
-            <img src="{{ member.data.photo }}" alt="{{ member.data.name }}" style="width:100%; height:auto; border-radius:4px;">
-          </figure>
-        </div>
-        {% endif %}
-
-        <div class="card-content has-text-centered">
-          <p class="title is-6">{{ member.data.name }}</p>
-          {% if member.data.pronouns %}
-          <p class="subtitle is-7">{{ member.data.pronouns }}</p>
+<div class="columns is-multiline is-flex is-align-items-stretch mt-4">
+  {% for member in collections.member %}
+    <div class="column is-6-mobile is-6-tablet is-3-desktop">
+      <a href="{{ member.url }}">
+        <div class="card">
+          {% if member.data.photo %}
+            <div class="card-image">
+              <figure class="image">
+                <div class="image-container">
+                  <img src="{{ member.data.photo }}" alt="{{ member.data.name }}">
+                </div>
+              </figure>
+            </div>
           {% endif %}
-          <p class="subtitle is-7">{{ member.data.role }}</p>
+
+          <div class="card-content has-text-centered">
+            <p class="title is-6">{{ member.data.name }}</p>
+            {% if member.data.pronouns %}
+            <p class="subtitle is-7">{{ member.data.pronouns }}</p>
+            {% endif %}
+            <p class="subtitle is-7">{{ member.data.role }}</p>
+          </div>
         </div>
-      </div>
-    </a>
-  </div>
-{% endfor %}
+      </a>
+    </div>
+  {% endfor %}
 </div>
