@@ -11,7 +11,9 @@ module.exports = function (eleventyConfig) {
 
   // ✅ Collection for members
   eleventyConfig.addCollection("member", function (collectionApi) {
-    return collectionApi.getFilteredByGlob("members/*.md");
+    return collectionApi.getFilteredByGlob("members/*.md").sort((a,b) => {
+      return a.data.weight - b.data.weight;
+    });
   });
 
   return {

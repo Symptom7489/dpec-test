@@ -4,6 +4,7 @@ pronouns: she/her
 role: Vice Chair, Lafayette DPEC At-Large Representative
 photo: /images/members/emily-broussard.png
 layout: /layouts/members.njk
+weight: 2
 ---
 Emily Broussard is from Lafayette, Louisiana and is currently serving
  as Scribe for the Democratic Party Executive Committee in Lafayette 

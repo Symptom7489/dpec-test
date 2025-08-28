@@ -19,4 +19,5 @@ collections:
       - { label: "Photo", name: "photo", widget: "image" }
       - { label: "Bio", name: "body", widget: "markdown" }
       - { label: "Name", name: "layout", widget: "hidden", default: "layouts/members.njk" }
+      - {label: "Weight", name: "weight", widget: "number", default: 100}
 

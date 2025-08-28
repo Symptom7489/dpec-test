@@ -4,6 +4,7 @@ pronouns: she/her
 role: Secretary (Scribe) Lafayette DPEC District 1
 photo: /images/members/amanda-anderson-district-1.png
 layout: layouts/members.njk
+weight: 4
 ---
 Amanda has resided across the Gulf South for 12 years, with 6 years in 
 Lafayette serving as a wildlife biologist and community advocate. As an 

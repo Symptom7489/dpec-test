@@ -4,6 +4,7 @@ pronouns: she/her
 role: Lafayette DPEC At Large Representative
 photo: /images/members/aimee-robinson-.png
 layout: /layouts/members.njk
+weight: 3
 ---
 Aimee is a lifelong democrat, who has been active in Lafayette and 
 Louisiana politics for many years. She is currently serving her 2nd term
